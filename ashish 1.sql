@@ -35,16 +35,14 @@ alter table student auto_increment=100;
 insert into student values(2,'abhishek','jagtap',9876543210);
 truncate table student;
 alter table student  modify rollno int auto_increment;
-insert into student(fname ,lname,contact) values ("ashish","more", 830881409);
+ insert into student(fname ,lname,contact) values ("ashish","more", 830881409);
 insert into student(fname ,lname,contact) values ("abhi","jagtap", 9856789000);
 insert into student(fname ,lname,contact) values ("gap","pap", 9856789400);
 insert into student(fname ,lname,contact) values ("gman"," man", 9856889400);
 insert into student(fname ,lname,contact) values ("gagan"," magan", 9853489400);
 alter table student drop city;
 delete from student where rollno =3;
-
-
- delete from student;
+delete from student;
  set sql_safe_updates =0;
  update student set fname = "ash",lname="sabale" where rollno=2;
  -- use descending order
