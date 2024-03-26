@@ -16,5 +16,5 @@ select * from table1 except select * from table2;
   
  
  
- 
+  
  

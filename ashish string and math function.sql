@@ -21,7 +21,7 @@ select * from studentdata;
 select upper(department),upper(name) from studentdata; 
 
 
---  math function
+--  math function-----------
 
 
 select abs(-11);
@@ -31,31 +31,32 @@ select ceil(12.84);
 select ceil(12.0);
 select ceil(12.01);
 
--- round
+-- round---------------
 
 select round(12.1);
 select round(12.4);
 select round(12.5);
   
   
-  -- truncate
+  -- truncate----------
   
   select truncate(12.1111,2);
   
-  -- mode
+  -- mode-------- 
+  
   select mod(10,4);
   
-  -- floor
+  -- floor------------
   
   select floor(10/4);
   
-  -- power
+  -- power---------------
   
   select pow(2,2);
   select pow(10,2);
   
   
--- sqrt
+-- sqrt---------------
 
 select sqrt(9);
 
@@ -78,7 +79,7 @@ select datediff('2024-03-20','2024-03-14');
 -- c indicates month
 select date_format("2024-03-14","%d-%c-%Y");
 -- we can use curdate() or direct date format
-select date_format(curdate(),'%d-%c-%y'); --
+select date_format(curdate(),'%d-%c-%y'); 
 select date_format(curdate(),'%D-%M-%y');
 select date_format(curdate(),'%D-%m-%y');
 select date_format(curdate(),'%d-%b-%y');
@@ -87,7 +88,7 @@ select date_format(curdate(),'%a-%D-%b-%y');
 select date_format(curdate(),'%W-%D-%b-%y');
 
 
--- date time
+-- date time-----------------------
 select date_format(now(),'%W-%D-%b-%y,%h:%i:%s');
 
 --
@@ -108,7 +109,7 @@ select id,date_format(dob,'%W,%D,%M,%Y'),age from abc;
 select id,date_format(dob,'%W,%D,%M,%Y') as DOB,age from abc;
 
 
--- assignmnt(date-mth-string function)
+-- assignmnt(date-mth-string function)-----------------------
 
 select date_format('1947-08-15','%W')as independence_day;
 select substring('my name is Ashish',12);

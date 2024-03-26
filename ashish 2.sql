@@ -21,7 +21,7 @@ select * from studentdata where name like "%e_";
 select * from studentdata where name like "a__i";
 select * from studentdata where name like "a%k";
 
--- limit
+-- limit------------------
 
 select * from studentdata;
 select * from studentdata limit 5; 
@@ -36,7 +36,7 @@ select distinct paidfees from studentdata order by paidfees  limit 1;
 select * from studentdata order by paidfees limit 1;
 
 select * from studentdata where paidfees = (select distinct paidfees from studentdata order by paidfees desc limit 1);
-
+     
 select * from studentdata where id in (4,6,9);
 
 select distinct paidfees from studentdata order by paidfees asc limit 1;
@@ -58,7 +58,7 @@ select * from studentdata;
 
 -- 
 
--- group by and having command
+-- group by and having command--------------
 
 
 select * from studentdata; 

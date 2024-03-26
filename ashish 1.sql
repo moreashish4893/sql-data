@@ -45,9 +45,11 @@ delete from student where rollno =3;
 delete from student;
  set sql_safe_updates =0;
  update student set fname = "ash",lname="sabale" where rollno=2;
- -- use descending order
-select * from student order by rollno desc;
+ -- use descending order--------
+ select * from student order by rollno desc;
 select student.fname,student.lname from student;
--- as(alias) :temporary resplacement
+
+-- as(alias) :temporary resplacement 
+
 select student.fname as first_name,student.lname from student;
   
