@@ -58,10 +58,11 @@ select* from college right join student1 on student1.cid=college.cid;
 
 -- full outer join---------
 
-select* from college left join student1 on student1.cid=college.cid
+select * from college left join student1 on student1.cid=college.cid
 
 union 
-select* from college right join student1 on student1.cid=college.cid;
+
+select * from college right join student1 on student1.cid=college.cid;
 
 -- self join--------
 

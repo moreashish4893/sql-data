@@ -15,7 +15,7 @@ select length (ltrim('      abc  abc   '));
 select trim('      abc      ');
 select substring('my name is ashish',12,6);
 
-
+ 
 select * from studentdata;
 
 select upper(department),upper(name) from studentdata; 
@@ -71,6 +71,7 @@ select name,department,sqrt(marks) from studentdata where id = 3;
 
 select curdate();
 select now();
+
 select sysdate();
 select last_day(curdate());
 select last_day('2024-02-14');
@@ -86,12 +87,13 @@ select date_format(curdate(),'%d-%b-%y');
 select date_format(curdate(),'%D-%b-%y');
 select date_format(curdate(),'%a-%D-%b-%y');
 select date_format(curdate(),'%W-%D-%b-%y');
+select date_format(curdate(),'%W-%D-%M-%Y');
 
 
 -- date time-----------------------
 select date_format(now(),'%W-%D-%b-%y,%h:%i:%s');
 
---
+--     
 
 create table abc(
 id int primary key, 

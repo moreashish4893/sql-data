@@ -5,7 +5,7 @@ name char(20),
 department varchar(50),
 marks  float,
 paidfees bigint,
-attendance int
+ attendance int
 );
 show tables;
 desc studentdata;
@@ -68,7 +68,7 @@ select count(id),department from studentdata group by department;
  select count(id),department from studentdata group by department having avg(marks) >75;
  select * from studentdata where marks not in(88);
  select count(id) ,department from studentdata where id not in(1,2) group by department having count(id)>2;
-
+    
  --
  --
  

@@ -20,11 +20,11 @@ lname varchar(20),
 contact int UNIQUE KEY
 );
 show tables;
-desc student;
+desc student; 
 alter table student add primary key(rollno);
 desc student;
 insert into student values(1,'ashish','more', 8308814000);
-alter table student modify contact bigint unique;
+ alter table student modify contact bigint unique;
 select * from student;   
 alter table student add column city varchar(30) default 'mumbai';
 update student set fname = "ash" where rollno=2;
@@ -35,7 +35,7 @@ alter table student auto_increment=100;
 insert into student values(2,'abhishek','jagtap',9876543210);
 truncate table student;
 alter table student  modify rollno int auto_increment;
- insert into student(fname ,lname,contact) values ("ashish","more", 830881409);
+insert into student(fname ,lname,contact) values ("ashish","more", 830881409);
 insert into student(fname ,lname,contact) values ("abhi","jagtap", 9856789000);
 insert into student(fname ,lname,contact) values ("gap","pap", 9856789400);
 insert into student(fname ,lname,contact) values ("gman"," man", 9856889400);
